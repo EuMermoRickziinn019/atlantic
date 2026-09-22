@@ -1,8 +1,8 @@
 package com.atlantic.atlanticapi.core.mapper;
 
 import com.atlantic.atlanticapi.models.adm.Pessoa;
-import com.atlantic.atlanticapi.models.dto.PessoaRequestDTO;
-import com.atlantic.atlanticapi.models.dto.PessoaResponseDTO;
+import com.atlantic.atlanticapi.models.dto.Pessoa.PessoaRequestDTO;
+import com.atlantic.atlanticapi.models.dto.Pessoa.PessoaResponseDTO;
 
 public class PessoaMapper {
     public static Pessoa toEntity(PessoaRequestDTO dto) {

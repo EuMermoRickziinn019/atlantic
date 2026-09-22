@@ -1,9 +1,9 @@
-package com.atlantic.atlanticapi.models.dto;
+package com.atlantic.atlanticapi.models.dto.Pessoa;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-public record PessoaRequestDTO(
+public record PessoaResponseDTO(
     Integer idpessoa,
     String nome,
     LocalDate dataNascimento,
@@ -11,7 +11,7 @@ public record PessoaRequestDTO(
     String cnpj,
     String email,
     String telefoneFixo,
-    String telefoneModel,
+    String telefoneMovel,
     LocalDateTime dataCadastro,
     LocalDateTime dataAlteracao,
     boolean inativo

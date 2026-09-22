@@ -1,5 +1,6 @@
 package com.atlantic.atlanticapi.models.adm;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
@@ -20,12 +21,15 @@ public class Empresa {
     private String nomeFantasia;
 
     @Column(name = "cnpj", length = 14, nullable = false, unique = true)
+    @JsonIgnore
     private String cnpj;
 
     @Column(name = "inscricao_estadual", length = 20)
+    @JsonIgnore
     private String inscricaoEstadual;
 
     @Column(name = "inscricao_municipal", length = 20)
+    @JsonIgnore
     private String inscricaoMunicipal;
 
     @Column(name = "regime_tributario", nullable = false)

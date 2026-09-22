@@ -4,10 +4,11 @@ import com.atlantic.atlanticapi.core.ISBServices.Facade.SessionFacadeADM;
 import com.atlantic.atlanticapi.core.ISBServices.ISBServicesAdm;
 import com.atlantic.atlanticapi.core.mapper.PessoaMapper;
 import com.atlantic.atlanticapi.models.adm.Pessoa;
-import com.atlantic.atlanticapi.models.dto.PessoaRequestDTO;
-import com.atlantic.atlanticapi.models.dto.PessoaResponseDTO;
+import com.atlantic.atlanticapi.models.dto.Pessoa.PessoaRequestDTO;
+import com.atlantic.atlanticapi.models.dto.Pessoa.PessoaResponseDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ public class PessoaController {
     }
 
     @PostMapping("/criarPessoa")
+    @PreAuthorize("hasAuthority('CRIAR')")
     public ResponseEntity<PessoaResponseDTO> criar(@RequestBody PessoaRequestDTO requestDTO) {
         Pessoa pessoa = PessoaMapper.toEntity(requestDTO);
         Pessoa respDB = negociosADM.criarPessoa(pessoa);
@@ -29,6 +31,7 @@ public class PessoaController {
     }
 
     @GetMapping("/getTodasPessoas")
+    @PreAuthorize("hasAuthority('VISUALIZAR')")
     public ResponseEntity<List<PessoaResponseDTO>> todasPessoas() {
         List<PessoaResponseDTO> list = new ArrayList<>();
         List<Pessoa> pessoas = negociosADM.getTodasPessoas();
@@ -39,6 +42,7 @@ public class PessoaController {
     }
 
     @GetMapping("/{id}")
+    @PreAuthorize("hasAuthority('VISUALIZAR')")
     public ResponseEntity<PessoaResponseDTO> consultarPessoa(@PathVariable Integer id) {
         Pessoa pessoa = negociosADM.consultarPessoa(id);
         if(pessoa != null) {
@@ -49,6 +53,7 @@ public class PessoaController {
     }
 
     @PostMapping("/{id}")
+    @PreAuthorize("hasAuthority('EDITAR')")
     public ResponseEntity<PessoaResponseDTO> atualizarPessoa(@PathVariable Integer id, @RequestBody PessoaRequestDTO requestDTO) {
         Pessoa pessoa = PessoaMapper.toEntity(requestDTO);
         pessoa.setIdpessoa(id);
@@ -61,6 +66,7 @@ public class PessoaController {
     }
 
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasAuthority('EXCLUIR')")
     public ResponseEntity<Void> deletarPessoa(@PathVariable Integer id) {
         if(negociosADM.removerPessoa(id)) {
             return ResponseEntity.status(HttpStatus.OK).build();

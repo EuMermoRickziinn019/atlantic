@@ -1,5 +1,6 @@
 package com.atlantic.atlanticapi.models.adm;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
@@ -21,9 +22,11 @@ public class Pessoa {
     private LocalDate dataNascimento;
 
     @Column(name = "cpf")
+    @JsonIgnore
     private String cpf;
 
     @Column(name = "cnpj")
+    @JsonIgnore
     private String cnpj;
 
     @Column(name = "email")
