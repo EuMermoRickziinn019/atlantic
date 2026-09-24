@@ -1,0 +1,261 @@
+POST http://localhost:9011/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@atlantic.com",
+  "senha": "admin123"
+}
+
+<> 2026-09-08T074229.401.txt
+
+###
+POST http://localhost:9011/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@atlantic.com",
+  "senha": "admin123"
+}
+
+<> 2026-09-08T074001.401.txt
+
+###
+POST http://localhost:9011/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@atlantic.com",
+  "senha": "admin123"
+}
+
+<> 2026-09-08T073844.401.txt
+
+###
+POST http://localhost:9011/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@atlantic.com",
+  "senha": "admin123"
+}
+
+###
+POST http://localhost:9011/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@atlantic.com",
+  "senha": "admin123"
+}
+
+###
+POST http://localhost:9011/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@atlantic.com",
+  "senha": "admin123"
+}
+
+###
+POST http://localhost:9011/api/v1/pessoa/criarPessoa
+Authorization: Basic admin admin123
+Content-Type: application/json
+
+{
+  "nome": "Carlos Eduardo Silva",
+  "dataNascimento": "1992-08-24",
+  "cpf": "12345678901",
+  "cnpj": null,
+  "email": "carlos.silva@email.com",
+  "telefoneFixo": "1434000000",
+  "telefoneMovel": "14999998888",
+  "inativo": false
+}
+
+###
+POST http://localhost:9011/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@atlantic.com",
+  "senha": "admin123"
+}
+
+###
+POST http://localhost:9011/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@atlantic.com",
+  "senha": "admin123"
+}
+
+###
+POST http://localhost:9011/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@atlantic.com",
+  "senha": "admin123"
+}
+
+###
+POST http://localhost:9011/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@atlantic.com",
+  "senha": "admin123"
+}
+
+###
+POST http://localhost:9011/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@atlantic.com",
+  "senha": "admin123"
+}
+
+###
+GET http://localhost:9011/api/v1/pessoa/getTodasPessoas
+Authorization: Basic admin admin123
+Content-Type: application/json
+
+<> 2026-09-08T062419.200.json
+
+###
+GET http://localhost:9011/api/v1/pessoa/getTodasPessoas
+Authorization: Basic admin admin123
+Content-Type: application/json
+
+<> 2026-09-08T062407.200.json
+
+###
+GET http://localhost:9011/api/v1/pessoa/getTodasPessoas
+Authorization: Basic admin admin123
+Content-Type: application/json
+
+<> 2026-09-08T050941.500.json
+
+###
+GET http://localhost:9011/api/v1/pessoa/getTodasPessoas
+
+###
+POST http://localhost:9011/api/v1/pessoa/criarPessoa
+Authorization: Basic admin admin123
+Content-Type: application/json
+
+{
+  "nome": "Carlos Eduardo Silva",
+  "dataNascimento": "1992-08-24",
+  "cpf": "12345678901",
+  "cnpj": null,
+  "email": "carlos.silva@email.com",
+  "telefoneFixo": "1434000000",
+  "telefoneMovel": "14999998888",
+  "inativo": false
+}
+
+<> 2026-09-08T050713.200.json
+
+###
+POST http://localhost:9011/api/v1/pessoa/criarPessoa
+Authorization: Basic admin admin123
+Content-Type: application/json
+
+{
+  "nome": "Carlos Eduardo Silva",
+  "dataNascimento": "1992-08-24",
+  "cpf": "12345678901",
+  "cnpj": null,
+  "email": "carlos.silva@email.com",
+  "telefoneFixo": "1434000000",
+  "telefoneMovel": "14999998888",
+  "inativo": false
+}
+
+<> 2026-09-08T050130.500.json
+
+###
+POST http://localhost:9011/api/v1/pessoa/criarPessoa
+Authorization: Basic admin admin123
+Content-Type: application/json
+
+{
+  "nome": "Carlos Eduardo Silva",
+  "dataNascimento": "1992-08-24",
+  "cpf": "12345678901",
+  "cnpj": null,
+  "email": "carlos.silva@email.com",
+  "telefoneFixo": "1434000000",
+  "telefoneMovel": "14999998888",
+  "inativo": false
+}
+
+###
+POST http://localhost:9011/api/v1/pessoa/criarPessoa
+Authorization: Basic user a6a4d8d2-2faf-4502-91bd-bfaa05ee2e39
+Content-Type: application/json
+
+{
+  "nome": "Carlos Eduardo Silva",
+  "dataNascimento": "1992-08-24",
+  "cpf": "12345678901",
+  "cnpj": null,
+  "email": "carlos.silva@email.com",
+  "telefoneFixo": "1434000000",
+  "telefoneMovel": "14999998888",
+  "inativo": false
+}
+
+###
+POST http://localhost:9011/api/v1/pessoa/criarPessoa
+Content-Type: application/json
+
+{
+  "nome": "Carlos Eduardo Silva",
+  "dataNascimento": "1992-08-24",
+  "cpf": "12345678901",
+  "cnpj": null,
+  "email": "carlos.silva@email.com",
+  "telefoneFixo": "1434000000",
+  "telefoneMovel": "14999998888",
+  "inativo": false
+}
+
+###
+POST http://localhost:9011/api/v1/pessoa
+Content-Type: application/json
+
+{
+  "nome": "Carlos Eduardo Silva",
+  "dataNascimento": "1992-08-24",
+  "cpf": "12345678901",
+  "cnpj": null,
+  "email": "carlos.silva@email.com",
+  "telefoneFixo": "1434000000",
+  "telefoneMovel": "14999998888",
+  "inativo": false
+}
+
+###
+POST http://localhost:9011/api/v1/pessoa/criarPessoa
+Content-Type: application/json
+
+{
+  "nome": "Carlos Eduardo Silva",
+  "dataNascimento": "1992-08-24",
+  "cpf": "12345678901",
+  "cnpj": null,
+  "email": "carlos.silva@email.com",
+  "telefoneFixo": "1434000000",
+  "telefoneMovel": "14999998888",
+  "inativo": false
+}
+
+###
+GET http://localhost:9011/api/v1/pessoa/getTodasPessoas
+
+###

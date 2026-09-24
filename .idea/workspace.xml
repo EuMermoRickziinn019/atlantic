@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a8d4baed-d8f3-4f69-869e-2c46cb62cdf8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/atlantic-comuns/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlantic-db/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/ISBServicesCmc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/user/Perfil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/user/Permissao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/user/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlantic-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlantic-web/src/test/java/com/atlantic/atlanticapi/controller/PessoaControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atlantic-web/src/test/java/com/atlantic/atlanticapi/core/mapper/PessoaMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/AtlanticApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/AtlanticApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/controller/PessoaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/controller/PessoaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/ISBServices/Facade/RN/EmpresaRN.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/Facade/RN/EmpresaRN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/ISBServices/Facade/RN/PessoaRN.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/Facade/RN/PessoaRN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/ISBServices/Facade/RN/ProdutoRN.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/Facade/RN/ProdutoRN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/ISBServices/Facade/RN/UsuarioRN.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/Facade/RN/UsuarioRN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/ISBServices/Facade/SessionFacadeADM.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/Facade/SessionFacadeADM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/ISBServices/ISBServicesAdm.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/ISBServicesAdm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/ISBServices/ISBServicesUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/ISBServicesUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/mapper/PessoaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/core/mapper/PessoaMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/adm/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/adm/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/adm/Perfil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/adm/Permissao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/adm/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/adm/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/adm/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/adm/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/adm/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/Login/LoginRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/dto/adm/Login/LoginRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/Login/LoginResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/dto/adm/Login/LoginResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/Pessoa/PessoaRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/dto/adm/Pessoa/PessoaRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/Pessoa/PessoaResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/dto/adm/Pessoa/PessoaResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_teste.sql" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V1__create_teste.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1_create_empresa.sql" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V1_create_empresa.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1_create_pessoa.sql" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V1_create_pessoa.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1_create_produto.sql" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V1_create_produto.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1_insert_permicoes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V1_insert_permicoes.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2_create_usuario.sql" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V2_create_usuario.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2_teste3.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2_teste4.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/atlantic/atlanticapi/AtlanticApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/test/java/com/atlantic/atlanticapi/AtlanticApiApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="65" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.4565228008689193" />
+      <entry key="MS500" value="3.7429485371229436" />
+      <entry key="S2" value="5.807833774246042" />
+      <entry key="S5" value="6.478812154185064" />
+      <entry key="S10" value="6.744322771558734" />
+      <entry key="S30" value="7.597308089758373" />
+      <entry key="S60" value="8.82971316337127" />
+      <entry key="M2" value="10.334830129900055" />
+      <entry key="M5" value="14.871373373078715" />
+      <entry key="M10" value="23.545913847151184" />
+      <entry key="M15" value="30.045765209798933" />
+      <entry key="M30" value="40.37325313890563" />
+      <entry key="H1" value="47.69033773478504" />
+      <entry key="H2" value="52.06373710870072" />
+      <entry key="H4" value="54.45699440021115" />
+      <entry key="D1" value="56.56535900408729" />
+      <entry key="W1" value="56.937638288778594" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="2.0236197725730213E-267" />
+      <entry key="S2" value="2.698798076354788E-67" />
+      <entry key="S5" value="3.415093553489963E-27" />
+      <entry key="S10" value="8.19693071797758E-14" />
+      <entry key="S30" value="6.888686219314338E-5" />
+      <entry key="S60" value="0.012191062037854519" />
+      <entry key="M2" value="0.2055454339645366" />
+      <entry key="M5" value="1.8839082269164682" />
+      <entry key="M10" value="4.8133350179999335" />
+      <entry key="M15" value="6.769849738703003" />
+      <entry key="M30" value="9.663323872266908" />
+      <entry key="H1" value="11.6096983774089" />
+      <entry key="H2" value="12.74304435077365" />
+      <entry key="H4" value="13.355198401143111" />
+      <entry key="D1" value="13.890187560702637" />
+      <entry key="W1" value="13.984254016450816" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.4032746642730913" />
+      <entry key="MS500" value="3.7121573025801187" />
+      <entry key="S2" value="5.795581256639697" />
+      <entry key="S5" value="6.4733152552566535" />
+      <entry key="S10" value="6.74145473421373" />
+      <entry key="S30" value="7.596266018991544" />
+      <entry key="S60" value="8.841071119293067" />
+      <entry key="M2" value="10.53832690792849" />
+      <entry key="M5" value="16.74646671955512" />
+      <entry key="M10" value="28.346752152155396" />
+      <entry key="M15" value="36.80348590311667" />
+      <entry key="M30" value="50.027622070804505" />
+      <entry key="H1" value="59.29456651742744" />
+      <entry key="H2" value="64.80375486591991" />
+      <entry key="H4" value="67.81060030025" />
+      <entry key="D1" value="70.45526957537973" />
+      <entry key="W1" value="70.92185244415269" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3JfTZOyobFYg1zW2pA1QPO4019d" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/richa/OneDrive/Documentos/atlantic/atlantic-db/src/main/java/com/atlantic",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/richa/OneDrive/Documentos/atlantic/atlantic-rnf/src/main/java/com/atlantic/Main.java",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-db\src\main\java\com\atlantic" />
+      <recent name="C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-web" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="atlantic" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="atlantic" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AtlanticApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="atlantic-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atlantic.atlanticapi.AtlanticApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8d4baed-d8f3-4f69-869e-2c46cb62cdf8" name="Changes" comment="" />
+      <created>1790051177749</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1790051177749</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

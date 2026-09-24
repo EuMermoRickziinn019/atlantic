@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d9a30c91-0a27-46e3-b254-008bbdc0efe3" name="Changes" comment="gerar versao altomaticamente">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/atlantic/atlanticapi/controller/PessoaControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/atlantic/atlanticapi/core/mapper/PessoaMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/controller/PessoaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/controller/PessoaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/mapper/PessoaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/mapper/PessoaMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/Login/LoginRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/adm/Login/LoginRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/Login/LoginResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/adm/Login/LoginResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/Pessoa/PessoaRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/adm/Pessoa/PessoaRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/Pessoa/PessoaResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/adm/Pessoa/PessoaResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2_teste3.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2_teste4.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="61" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Docker Compose" />
+        <option value="Record" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Richardmedeiros11&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Richardmedeiros11/atlantic.git&quot;,
+    &quot;accountId&quot;: &quot;2728e5cd-a2bb-4d22-ac78-3246e4991f77&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="9.747001663774996E-237" />
+      <entry key="S2" value="1.0068884548150423E-59" />
+      <entry key="S5" value="3.783053714448973E-24" />
+      <entry key="S10" value="4.864203398936501E-12" />
+      <entry key="S30" value="8.744130170048379E-4" />
+      <entry key="S60" value="0.11129896091322102" />
+      <entry key="M2" value="1.304337265669601" />
+      <entry key="M5" value="6.058076453461038" />
+      <entry key="M10" value="12.350681666451582" />
+      <entry key="M15" value="21.293002254771388" />
+      <entry key="M30" value="65.25289490119103" />
+      <entry key="H1" value="159.33877217225074" />
+      <entry key="H2" value="274.1378378657631" />
+      <entry key="H4" value="368.4096748149215" />
+      <entry key="D1" value="477.0445268362961" />
+      <entry key="W1" value="499.19427740259096" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000204151591732" />
+      <entry key="S2" value="1.068701158563945" />
+      <entry key="S5" value="1.413484792820634" />
+      <entry key="S10" value="1.8545484894186717" />
+      <entry key="S30" value="2.4831312302416837" />
+      <entry key="S60" value="2.732970513334273" />
+      <entry key="M2" value="3.0465249548094873" />
+      <entry key="M5" value="3.951618421397556" />
+      <entry key="M10" value="5.2185311281715325" />
+      <entry key="M15" value="7.689663950059149" />
+      <entry key="M30" value="25.632213450928887" />
+      <entry key="H1" value="71.42559547282731" />
+      <entry key="H2" value="129.8022994710387" />
+      <entry key="H4" value="178.10127636968906" />
+      <entry key="D1" value="233.73060433632557" />
+      <entry key="W1" value="245.0550256724525" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="4.256419880219739E-5" />
+      <entry key="MS500" value="0.1336066934563794" />
+      <entry key="S2" value="0.654960481757609" />
+      <entry key="S5" value="1.1810994696757755" />
+      <entry key="S10" value="1.7036023215232103" />
+      <entry key="S30" value="2.4174164218122014" />
+      <entry key="S60" value="2.806470749818287" />
+      <entry key="M2" value="4.322228212083502" />
+      <entry key="M5" value="9.982656682297918" />
+      <entry key="M10" value="17.54704947213027" />
+      <entry key="M15" value="28.961466598412905" />
+      <entry key="M30" value="90.85571363720021" />
+      <entry key="H1" value="230.7259725077199" />
+      <entry key="H2" value="403.9056321217892" />
+      <entry key="H4" value="546.4873042608201" />
+      <entry key="D1" value="710.7699541055307" />
+      <entry key="W1" value="744.24852742016" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3J27h6oWmNjEQr4mHWoVAZevsNW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.AtlanticApiApplication | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.AtlanticApiApplication | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.AtlanticApiApplication | #3.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AtlanticApiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/richa/OneDrive/Área de Trabalho/atlantic&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\richa\OneDrive\Área de Trabalho\atlantic\src\test" />
+      <recent name="C:\Users\richa\OneDrive\Área de Trabalho\atlantic\src\main\resources\db\migration" />
+      <recent name="C:\Users\richa\OneDrive\Área de Trabalho\atlantic" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\richa\OneDrive\Área de Trabalho\atlantic\src" />
+      <recent name="C:\Users\richa\OneDrive\Área de Trabalho\atlantic" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atlantic.atlanticapi.models.adm" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="AtlanticApiApplication | #1" value="STOPPED" />
+              <entry key="AtlanticApiApplication | #2" value="STOPPED" />
+              <entry key="AtlanticApiApplication | #3" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.AtlanticApiApplicationTests">
+    <configuration name="AtlanticApiApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/AtlanticApiApplication.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="AtlanticApiApplication | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/AtlanticApiApplication.http" executionIdentifier="#2" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="AtlanticApiApplication | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/AtlanticApiApplication.http" executionIdentifier="#3" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="AtlanticApiApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="atlantic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atlantic.atlanticapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atlantic.atlanticapi" />
+      <option name="MAIN_CLASS_NAME" value="com.atlantic.atlanticapi.AtlanticApiApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AtlanticApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="atlantic" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atlantic.atlanticapi.AtlanticApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="HTTP Request.AtlanticApiApplication | #2" />
+      <item itemvalue="HTTP Request.AtlanticApiApplication | #3" />
+      <item itemvalue="HTTP Request.AtlanticApiApplication | #1" />
+      <item itemvalue="JUnit.AtlanticApiApplicationTests" />
+      <item itemvalue="Spring Boot.AtlanticApiApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AtlanticApiApplicationTests" />
+        <item itemvalue="HTTP Request.AtlanticApiApplication | #3" />
+        <item itemvalue="HTTP Request.AtlanticApiApplication | #1" />
+        <item itemvalue="HTTP Request.AtlanticApiApplication | #2" />
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9a30c91-0a27-46e3-b254-008bbdc0efe3" name="Changes" comment="" />
+      <created>1788847427757</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788847427757</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Inicio" />
+    <MESSAGE value="Desenvolvimento da tabela produto" />
+    <MESSAGE value="RNs das atuais tabelas criadas.&#10;Intermediario SessionFacadeADM&#10;Controladores do Pessoa&#10;Iniciando desenvolvimento com Docker" />
+    <MESSAGE value="gerar versao altomaticamente" />
+    <option name="LAST_COMMIT_MESSAGE" value="gerar versao altomaticamente" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

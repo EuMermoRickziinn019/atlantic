@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-09-08T08:09:41.422+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/api/v1/pessoa/getTodasPessoas"
+}

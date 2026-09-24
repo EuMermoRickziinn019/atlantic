@@ -1,0 +1,3 @@
+com\atlantic\atlanticapi\AtlanticApiApplicationTests.class
+com\atlantic\atlanticapi\controller\PessoaControllerTest.class
+com\atlantic\atlanticapi\core\mapper\PessoaMapperTest.class

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V2_teste4.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V1__create_teste.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V1_create_empresa.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V1_create_pessoa.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V1_create_produto.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V1_insert_permicoes.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V2_create_usuario.sql" dialect="GenericSQL" />
   </component>
 </project>

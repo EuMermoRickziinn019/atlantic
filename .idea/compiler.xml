@@ -6,13 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="atlantic" />
+        <module name="atlantic-comuns" />
+        <module name="atlantic-db" />
+        <module name="atlantic-web" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="atlantic" options="-parameters" />
+      <module name="AtlanticAPI" options="" />
+      <module name="atlantic-comuns" options="-parameters" />
+      <module name="atlantic-db" options="-parameters" />
+      <module name="atlantic-web" options="-parameters" />
     </option>
   </component>
 </project>

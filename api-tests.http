@@ -1,0 +1,32 @@
+@baseUrl = http://localhost:9011
+@email = admin@example.com
+@senha = altere-para-uma-senha-valida
+@pessoaId = 1
+### Login
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{"email":"{{email}}","senha":"{{senha}}"}
+### Login inválido: esperado 400
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{"email":"invalido","senha":""}
+### Criar (estado atual: 401/403, pois login não devolve token)
+POST {{baseUrl}}/api/v1/pessoa/criarPessoa
+Content-Type: application/json
+
+{"nome":"Teste","dataNascimento":"1990-01-01","cpf":"12345678901","email":"teste@example.com","telefoneModel":"11999999999","inativo":false}
+### Listar
+GET {{baseUrl}}/api/v1/pessoa/getTodasPessoas
+### Consultar
+GET {{baseUrl}}/api/v1/pessoa/{{pessoaId}}
+### Consultar inexistente
+GET {{baseUrl}}/api/v1/pessoa/999999
+### Atualizar (a API usa POST, embora PUT seja recomendado)
+POST {{baseUrl}}/api/v1/pessoa/{{pessoaId}}
+Content-Type: application/json
+
+{"nome":"Teste Atualizado","email":"atualizado@example.com","inativo":false}
+### Excluir
+DELETE {{baseUrl}}/api/v1/pessoa/{{pessoaId}}
