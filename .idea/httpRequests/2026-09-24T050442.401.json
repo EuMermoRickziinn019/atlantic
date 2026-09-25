@@ -1,0 +1,4 @@
+{
+  "status": 401,
+  "mensagem": "Autenticação necessária ou token inválido."
+}

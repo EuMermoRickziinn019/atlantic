@@ -1,0 +1,16 @@
+{
+  "nome": "Usuario Teste Login",
+  "email": "teste.login.20260924@example.com",
+  "autorizacoes": [
+    "EDITAR",
+    "ROLE_ADMIN",
+    "VISUALIZAR",
+    "CRIAR",
+    "EXCLUIR"
+  ],
+  "mensagem": "Autenticação realizada com sucesso!",
+  "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBdGxhbnRpY0FQSSIsInN1YiI6InRlc3RlLmxvZ2luLjIwMjYwOTI0QGV4YW1wbGUuY29tIiwianRpIjoiNjg4MGRlOTgtNDQwOC00ZTRkLThjYjgtZWU5OWU0Y2RjNzQxIiwiaWF0IjoxNzkwMjM3MDkzLCJleHAiOjE3OTAyMzc5OTN9.2e9nEeIDwMXIed9pHJkVgml_-tfi6hsHf5lH_zjypBE",
+  "tokenType": "Bearer",
+  "expiresIn": 900,
+  "expiresAt": "2026-09-24T08:19:53Z"
+}

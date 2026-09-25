@@ -1,0 +1,15 @@
+[
+  {
+    "idpessoa": 1,
+    "nome": "Carlos Eduardo Silva",
+    "dataNascimento": "1992-08-24",
+    "cpf": "12345678901",
+    "cnpj": null,
+    "email": "carlos.silva@email.com",
+    "telefoneFixo": "1434000000",
+    "telefoneMovel": null,
+    "dataCadastro": null,
+    "dataAlteracao": null,
+    "inativo": false
+  }
+]

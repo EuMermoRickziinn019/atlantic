@@ -1,0 +1,79 @@
+DELETE http://localhost:9011/api/v1/pessoa/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBdGxhbnRpY0FQSSIsInN1YiI6InRlc3RlLmxvZ2luLjIwMjYwOTI0QGV4YW1wbGUuY29tIiwianRpIjoiNjg4MGRlOTgtNDQwOC00ZTRkLThjYjgtZWU5OWU0Y2RjNzQxIiwiaWF0IjoxNzkwMjM3MDkzLCJleHAiOjE3OTAyMzc5OTN9.2e9nEeIDwMXIed9pHJkVgml_-tfi6hsHf5lH_zjypBE
+
+###
+POST http://localhost:9011/api/v1/pessoa/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBdGxhbnRpY0FQSSIsInN1YiI6InRlc3RlLmxvZ2luLjIwMjYwOTI0QGV4YW1wbGUuY29tIiwianRpIjoiNjg4MGRlOTgtNDQwOC00ZTRkLThjYjgtZWU5OWU0Y2RjNzQxIiwiaWF0IjoxNzkwMjM3MDkzLCJleHAiOjE3OTAyMzc5OTN9.2e9nEeIDwMXIed9pHJkVgml_-tfi6hsHf5lH_zjypBE
+Content-Type: application/json
+
+{"nome":"Teste Atualizado","email":"atualizado@example.com","inativo":false}
+
+<> 2026-09-24T050553.200.json
+
+###
+GET http://localhost:9011/api/v1/pessoa/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBdGxhbnRpY0FQSSIsInN1YiI6InRlc3RlLmxvZ2luLjIwMjYwOTI0QGV4YW1wbGUuY29tIiwianRpIjoiNjg4MGRlOTgtNDQwOC00ZTRkLThjYjgtZWU5OWU0Y2RjNzQxIiwiaWF0IjoxNzkwMjM3MDkzLCJleHAiOjE3OTAyMzc5OTN9.2e9nEeIDwMXIed9pHJkVgml_-tfi6hsHf5lH_zjypBE
+
+<> 2026-09-24T050544.200.json
+
+###
+POST http://localhost:9011/api/v1/pessoa/criarPessoa
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBdGxhbnRpY0FQSSIsInN1YiI6InRlc3RlLmxvZ2luLjIwMjYwOTI0QGV4YW1wbGUuY29tIiwianRpIjoiNjg4MGRlOTgtNDQwOC00ZTRkLThjYjgtZWU5OWU0Y2RjNzQxIiwiaWF0IjoxNzkwMjM3MDkzLCJleHAiOjE3OTAyMzc5OTN9.2e9nEeIDwMXIed9pHJkVgml_-tfi6hsHf5lH_zjypBE
+Content-Type: application/json
+
+{"nome":"Teste","dataNascimento":"1990-01-01","cpf":"12345678901","email":"teste@example.com","telefoneModel":"11999999999","inativo":false}
+
+<> 2026-09-24T050537.200.json
+
+###
+GET http://localhost:9011/api/v1/pessoa/getTodasPessoas
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBdGxhbnRpY0FQSSIsInN1YiI6InRlc3RlLmxvZ2luLjIwMjYwOTI0QGV4YW1wbGUuY29tIiwianRpIjoiNjg4MGRlOTgtNDQwOC00ZTRkLThjYjgtZWU5OWU0Y2RjNzQxIiwiaWF0IjoxNzkwMjM3MDkzLCJleHAiOjE3OTAyMzc5OTN9.2e9nEeIDwMXIed9pHJkVgml_-tfi6hsHf5lH_zjypBE
+
+<> 2026-09-24T050528.200.json
+
+###
+POST http://localhost:9011/api/v1/auth/login
+Content-Type: application/json
+
+{"email":"teste.login.20260924@example.com","senha":"AtlanticTeste!2026local"}
+
+<> 2026-09-24T050453.200.json
+
+###
+GET http://localhost:9011/api/v1/pessoa/getTodasPessoas
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBdGxhbnRpY0FQSSIsInN1YiI6InRlc3RlLmxvZ2luLjIwMjYwOTI0QGV4YW1wbGUuY29tIiwianRpIjoiYjY2Yjg0MDctYzc3MC00ZmJmLThhZWItMzhjYjI1OTJmZjliIiwiaWF0IjoxNzkwMjMxNjEwLCJleHAiOjE3OTAyMzI1MTB9.6UsD8xZVODRRY2kpqUFqr6FXAc4Rj00Gb5KpooAp2uk
+
+<> 2026-09-24T050442.401.json
+
+###
+GET http://localhost:9011/api/v1/pessoa/getTodasPessoas
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBdGxhbnRpY0FQSSIsInN1YiI6InRlc3RlLmxvZ2luLjIwMjYwOTI0QGV4YW1wbGUuY29tIiwianRpIjoiYjY2Yjg0MDctYzc3MC00ZmJmLThhZWItMzhjYjI1OTJmZjliIiwiaWF0IjoxNzkwMjMxNjEwLCJleHAiOjE3OTAyMzI1MTB9.6UsD8xZVODRRY2kpqUFqr6FXAc4Rj00Gb5KpooAp2uk
+
+<> 2026-09-24T033412.403.json
+
+###
+POST http://localhost:9011/api/v1/pessoa/criarPessoa
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBdGxhbnRpY0FQSSIsInN1YiI6InRlc3RlLmxvZ2luLjIwMjYwOTI0QGV4YW1wbGUuY29tIiwianRpIjoiYjY2Yjg0MDctYzc3MC00ZmJmLThhZWItMzhjYjI1OTJmZjliIiwiaWF0IjoxNzkwMjMxNjEwLCJleHAiOjE3OTAyMzI1MTB9.6UsD8xZVODRRY2kpqUFqr6FXAc4Rj00Gb5KpooAp2uk
+Content-Type: application/json
+
+{"nome":"Teste","dataNascimento":"1990-01-01","cpf":"12345678901","email":"teste@example.com","telefoneModel":"11999999999","inativo":false}
+
+<> 2026-09-24T033403.403.json
+
+###
+POST http://localhost:9011/api/v1/auth/login
+Content-Type: application/json
+
+{"email":"teste.login.20260924@example.com","senha":"AtlanticTeste!2026local"}
+
+<> 2026-09-24T033330.200.json
+
+###
+POST http://localhost:9011/api/v1/auth/login
+Content-Type: application/json
+
+{"email":"teste.login.20260924@example.com","senha":"AtlanticTeste!2026local"}
+
+<> 2026-09-24T032401.401.json
+
+###

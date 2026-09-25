@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.atlantic.atlanticapi.security.JwtSecurityIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.615 s -- in com.atlantic.atlanticapi.security.JwtSecurityIntegrationTest

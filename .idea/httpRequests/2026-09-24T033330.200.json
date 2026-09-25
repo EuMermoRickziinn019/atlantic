@@ -1,0 +1,10 @@
+{
+  "nome": "Usuario Teste Login",
+  "email": "teste.login.20260924@example.com",
+  "autorizacoes": [],
+  "mensagem": "Autenticação realizada com sucesso!",
+  "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBdGxhbnRpY0FQSSIsInN1YiI6InRlc3RlLmxvZ2luLjIwMjYwOTI0QGV4YW1wbGUuY29tIiwianRpIjoiYjY2Yjg0MDctYzc3MC00ZmJmLThhZWItMzhjYjI1OTJmZjliIiwiaWF0IjoxNzkwMjMxNjEwLCJleHAiOjE3OTAyMzI1MTB9.6UsD8xZVODRRY2kpqUFqr6FXAc4Rj00Gb5KpooAp2uk",
+  "tokenType": "Bearer",
+  "expiresIn": 900,
+  "expiresAt": "2026-09-24T06:48:30Z"
+}

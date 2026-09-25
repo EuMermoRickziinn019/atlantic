@@ -1,8 +1,8 @@
 package com.atlantic.ISBServices.Facade;
 
-import com.atlantic.ISBServices.Facade.RN.EmpresaRN;
-import com.atlantic.ISBServices.Facade.RN.PessoaRN;
-import com.atlantic.ISBServices.Facade.RN.ProdutoRN;
+import com.atlantic.ISBServices.Facade.RN.adm.EmpresaRN;
+import com.atlantic.ISBServices.Facade.RN.adm.PessoaRN;
+import com.atlantic.ISBServices.Facade.RN.adm.ProdutoRN;
 import com.atlantic.ISBServices.ISBServicesAdm;
 import com.atlantic.models.adm.Empresa;
 import com.atlantic.models.adm.Pessoa;

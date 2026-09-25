@@ -1,0 +1,13 @@
+{
+  "idpessoa": 1,
+  "nome": "Teste Atualizado",
+  "dataNascimento": null,
+  "cpf": null,
+  "cnpj": null,
+  "email": "atualizado@example.com",
+  "telefoneFixo": null,
+  "telefoneMovel": null,
+  "dataCadastro": null,
+  "dataAlteracao": "2026-09-24T05:05:53.2228318",
+  "inativo": false
+}

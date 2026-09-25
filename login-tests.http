@@ -1,0 +1,131 @@
+# Execute com o HTTP Client do IntelliJ IDEA.
+# Conta cadastrada no PostgreSQL local (teste_tcc). Inicie a API antes de executar.
+# As credenciais abaixo pertencem somente à conta local de teste.
+# Não versione credenciais reais. Execute cada cenário pelo botão ao lado da requisição.
+@baseUrl = http://localhost:9011
+@email = teste.login.20260924@example.com
+@senha = AtlanticTeste!2026local
+@senhaIncorreta = senha-incorreta-para-este-teste
+@emailInexistente = usuario-inexistente-login@example.invalid
+
+### 1. Login válido — 200 e JWT (requer credenciais válidas acima)
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "{{email}}",
+  "senha": "{{senha}}"
+}
+
+> {%
+    client.test("Login retorna 200 e token Bearer", function () {
+        client.assert(response.status === 200, "Esperado HTTP 200; confira as credenciais e se o usuário está ativo.");
+        client.assert(typeof response.body.accessToken === "string" && response.body.accessToken.length > 0, "accessToken ausente.");
+        client.assert(response.body.tokenType === "Bearer", "tokenType deve ser Bearer.");
+        client.assert(response.body.expiresIn > 0, "expiresIn deve ser positivo.");
+        client.assert(Boolean(response.body.expiresAt), "expiresAt ausente.");
+    });
+%}
+
+### 2. Senha incorreta — 401 (use o email de um usuário existente)
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "{{email}}",
+  "senha": "{{senhaIncorreta}}"
+}
+
+> {%
+    client.test("Senha incorreta retorna 401", function () {
+        client.assert(response.status === 401, "Esperado HTTP 401.");
+        client.assert(response.body.mensagem === "E-mail ou senha inválidos.", "Mensagem de autenticação inesperada.");
+    });
+%}
+
+### 3. Usuário inexistente — 401 (o email de teste não deve existir no banco)
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "{{emailInexistente}}",
+  "senha": "senha-qualquer"
+}
+
+> {%
+    client.test("Usuário inexistente retorna 401", function () {
+        client.assert(response.status === 401, "Esperado HTTP 401.");
+        client.assert(response.body.mensagem === "E-mail ou senha inválidos.", "Mensagem de autenticação inesperada.");
+    });
+%}
+
+### 4. Formato de email inválido — 400
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "email-sem-arroba",
+  "senha": "senha-qualquer"
+}
+
+> {%
+    client.test("Email inválido retorna 400", function () {
+        client.assert(response.status === 400, "Esperado HTTP 400.");
+    });
+%}
+
+### 5. Email ausente — 400
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "senha": "senha-qualquer"
+}
+
+> {%
+    client.test("Email obrigatório", function () {
+        client.assert(response.status === 400, "Esperado HTTP 400.");
+    });
+%}
+
+### 6. Senha ausente — 400
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "{{email}}"
+}
+
+> {%
+    client.test("Senha obrigatória", function () {
+        client.assert(response.status === 400, "Esperado HTTP 400.");
+    });
+%}
+
+### 7. Campos em branco — 400
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "   ",
+  "senha": "   "
+}
+
+> {%
+    client.test("Campos em branco retornam 400", function () {
+        client.assert(response.status === 400, "Esperado HTTP 400.");
+    });
+%}
+
+### 8. Corpo JSON vazio — 400
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{}
+
+> {%
+    client.test("Corpo vazio retorna 400", function () {
+        client.assert(response.status === 400, "Esperado HTTP 400.");
+    });
+%}

@@ -1,0 +1,13 @@
+{
+  "idpessoa": 34,
+  "nome": "Teste",
+  "dataNascimento": "1990-01-01",
+  "cpf": "12345678901",
+  "cnpj": null,
+  "email": "teste@example.com",
+  "telefoneFixo": null,
+  "telefoneMovel": "11999999999",
+  "dataCadastro": null,
+  "dataAlteracao": null,
+  "inativo": false
+}
