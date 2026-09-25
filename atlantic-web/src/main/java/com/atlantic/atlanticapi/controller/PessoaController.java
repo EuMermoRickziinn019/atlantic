@@ -66,7 +66,7 @@ public class PessoaController {
     }
 
     @DeleteMapping("/{id}")
-    @PreAuthorize("hasAuthority('EXCLUIR')")
+    @PreAuthorize("hasRole('ADMIN') and hasAuthority('EXCLUIR')")
     public ResponseEntity<Void> deletarPessoa(@PathVariable Integer id) {
         if(negociosADM.removerPessoa(id)) {
             return ResponseEntity.status(HttpStatus.OK).build();

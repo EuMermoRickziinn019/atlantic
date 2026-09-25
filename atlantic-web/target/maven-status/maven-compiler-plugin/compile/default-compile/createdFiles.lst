@@ -1,5 +1,5 @@
+com\atlantic\atlanticapi\controller\AuthController.class
+com\atlantic\atlanticapi\controller\PessoaController.class
 com\atlantic\atlanticapi\AtlanticApiApplication.class
 com\atlantic\atlanticapi\config\SecurityConfig.class
 com\atlantic\atlanticapi\core\mapper\PessoaMapper.class
-com\atlantic\atlanticapi\controller\AuthController.class
-com\atlantic\atlanticapi\controller\PessoaController.class

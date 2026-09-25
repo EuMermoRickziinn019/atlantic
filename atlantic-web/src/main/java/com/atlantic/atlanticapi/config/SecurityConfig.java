@@ -1,6 +1,10 @@
 package com.atlantic.atlanticapi.config;
 
-import com.atlantic.ISBServices.Facade.RN.UsuarioRN;
+import com.atlantic.ISBServices.Facade.RN.user.UsuarioRN;
+import com.atlantic.atlanticapi.security.ApiSecurityErrors;
+import com.atlantic.atlanticapi.security.JwtAuthenticationFilter;
+import com.atlantic.atlanticapi.security.JwtService;
+import jakarta.servlet.DispatcherType;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -15,31 +19,30 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
-
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
 public class SecurityConfig {
-
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
+    public SecurityFilterChain securityFilterChain(HttpSecurity http, JwtService jwtService,
+                                                   UsuarioRN users, ApiSecurityErrors errors) throws Exception {
+        return http
                 .csrf(AbstractHttpConfigurer::disable)
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .requestCache(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/v1/auth/**").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/api/v1/auth/**").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/api/v1/pessoa/**").authenticated()
-                        .requestMatchers(HttpMethod.POST, "/api/v1/pessoa/**").hasAnyAuthority("CRIAR", "ROLE_ADMIN")
-                        .requestMatchers(HttpMethod.PUT, "/api/v1/pessoa/**").hasAnyAuthority("EDITAR", "ROLE_ADMIN")
-                        .requestMatchers(HttpMethod.DELETE, "/api/v1/pessoa/**").hasRole("ADMIN")
-                        .anyRequest().authenticated()
-                )
+                        .dispatcherTypeMatchers(DispatcherType.ERROR).permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/v1/auth/login").permitAll()
+                        .anyRequest().authenticated())
+                .exceptionHandling(ex -> ex.authenticationEntryPoint(errors).accessDeniedHandler(errors))
                 .httpBasic(AbstractHttpConfigurer::disable)
-                .formLogin(AbstractHttpConfigurer::disable);
-
-        return http.build();
+                .formLogin(AbstractHttpConfigurer::disable)
+                .logout(AbstractHttpConfigurer::disable)
+                .addFilterBefore(new JwtAuthenticationFilter(jwtService, users, errors),
+                        UsernamePasswordAuthenticationFilter.class)
+                .build();
     }
 
     @Bean
@@ -48,11 +51,10 @@ public class SecurityConfig {
     }
 
     @Bean
-    public DaoAuthenticationProvider authenticationProvider(UsuarioRN userRN, PasswordEncoder passwordEncoder) {
-        DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
-        authProvider.setUserDetailsService(userRN);
-        authProvider.setPasswordEncoder(passwordEncoder);
-        return authProvider;
+    public DaoAuthenticationProvider authenticationProvider(UsuarioRN users, PasswordEncoder passwordEncoder) {
+        var provider = new DaoAuthenticationProvider(users);
+        provider.setPasswordEncoder(passwordEncoder);
+        return provider;
     }
 
     @Bean

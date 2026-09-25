@@ -1,6 +1,6 @@
 # Atlantic API
 
-Backend Java para gestão de pessoas, com modelos de empresas, produtos, usuários, perfis e permissões. O projeto está em desenvolvimento e utiliza Spring Boot, PostgreSQL e uma estrutura Maven com três módulos.
+Backend Java para gestão de pessoas, com modelos de empresas, produtos, usuários, perfis e permissões. O projeto está em desenvolvimento e utiliza Spring Boot, PostgreSQL e uma estrutura Maven com dois módulos.
 
 ## Tecnologias
 
@@ -12,7 +12,7 @@ Backend Java para gestão de pessoas, com modelos de empresas, produtos, usuári
 - Springdoc OpenAPI **2.8.9**, Actuator e dependências JJWT **0.12.7**.
 - JUnit 5 e Mockito para testes.
 
-A presença das dependências JJWT não significa que a autenticação JWT esteja implementada: veja [Autenticação e permissões](#autenticação-e-permissões).
+A autenticação utiliza tokens JWT assinados com HS256. Veja [Autenticação e permissões](#autenticação-e-permissões).
 
 ## Organização do projeto
 
@@ -20,7 +20,7 @@ A presença das dependências JJWT não significa que a autenticação JWT estej
 | --- | --- |
 | `atlantic-web` | Inicialização do Spring Boot, controllers REST, segurança, mapeamento de DTOs, configurações e migrações SQL. |
 | `atlantic-db` | Entidades, DTOs, interfaces de persistência, classes de regras de negócio e fachada administrativa. |
-| `atlantic-comuns` | Módulo reservado para componentes compartilhados; atualmente possui apenas a configuração Maven. |
+| `libs/repository` | JARs e POMs do Submarino para conversão JSON e cliente HTTP, consumidos pelo módulo web. |
 
 ```text
 atlantic/
@@ -40,7 +40,7 @@ atlantic/
 │   └── src/main/java/com/atlantic/
 │       ├── ISBServices/
 │       └── models/
-├── atlantic-comuns/
+├── libs/repository/
 ├── docker-compose.yaml
 └── api-tests.http
 ```
@@ -84,7 +84,11 @@ Arquivo principal: [application.properties](atlantic-web/src/main/resources/appl
 | `spring.application.name` | `AtlanticAPI` |
 | `server.port` | `9011` |
 | `spring.datasource.url` | `jdbc:postgresql://localhost:5432/teste_tcc` |
-| `spring.datasource.username` | `postgres` |
+| `spring.datasource.username` | Variável `DB_USERNAME` |
+| `spring.datasource.password` | Variável `DB_PASSWORD` |
+| `security.jwt.secret` | Variável obrigatória `JWT_SECRET` |
+| `security.jwt.expiration-seconds` | `900` (15 minutos), sobrescrito por `JWT_EXPIRATION_SECONDS` |
+| `security.jwt.issuer` | `AtlanticAPI`, sobrescrito por `JWT_ISSUER` |
 | `spring.jpa.hibernate.ddl-auto` | `update` |
 | `spring.jpa.show-sql` | `true` |
 | `spring.flyway.enabled` | `true` |
@@ -94,12 +98,24 @@ Para usar outro banco ou outras credenciais, sobrescreva a configuração por va
 
 ```powershell
 $env:SPRING_DATASOURCE_URL = "jdbc:postgresql://localhost:5432/teste_tcc"
-$env:SPRING_DATASOURCE_USERNAME = "seu_usuario"
-$env:SPRING_DATASOURCE_PASSWORD = "sua_senha"
+$env:DB_USERNAME = "seu_usuario"
+$env:DB_PASSWORD = "sua_senha"
 $env:SERVER_PORT = "9011"
 ```
 
 Essas variáveis configuram a aplicação; as credenciais do PostgreSQL precisam corresponder às da instância utilizada.
+
+Defina também `JWT_SECRET` com uma chave aleatória de pelo menos 32 bytes, codificada em Base64. Exemplo para gerar uma chave apenas na sessão PowerShell atual:
+
+```powershell
+$jwtKeyBytes = New-Object byte[] 32
+$jwtRng = [System.Security.Cryptography.RandomNumberGenerator]::Create()
+$jwtRng.GetBytes($jwtKeyBytes)
+$jwtRng.Dispose()
+$env:JWT_SECRET = [Convert]::ToBase64String($jwtKeyBytes)
+```
+
+Execute o Maven nessa mesma sessão. No IntelliJ, configure `DB_USERNAME`, `DB_PASSWORD` e `JWT_SECRET` nas variáveis de ambiente da configuração de execução. Não versione a chave. Em um ambiente persistente, mantenha a mesma chave em um gerenciador de segredos; gerar outra invalida os tokens anteriores. A aplicação recusa chave inválida/fraca e validade fora do intervalo de 1 a 86400 segundos.
 
 ### 4. Compilar e iniciar
 
@@ -114,7 +130,7 @@ O primeiro comando instala os módulos no repositório Maven local, sem executar
 
 Endereço base após a inicialização: `http://localhost:9011`.
 
-**Estado atual:** estes passos dependem de banco e ambiente Java/Maven configurados. Consulte as pendências de migração e autenticação abaixo se a inicialização ou as chamadas protegidas falharem.
+**Estado atual:** estes passos dependem de banco e ambiente Java/Maven configurados. Confira as variáveis de ambiente e as pendências de migração abaixo se a inicialização falhar.
 
 ## Endpoints implementados
 
@@ -140,7 +156,7 @@ Exemplo de corpo JSON para login:
 }
 ```
 
-O usuário precisa existir no banco, com senha compatível com BCrypt. O login consulta usuários pelo e-mail; as propriedades `spring.security.user.*` não devem ser tratadas como um cadastro de usuário da aplicação.
+O usuário precisa existir e estar ativo no banco, com senha em BCrypt. O login consulta usuários pelo e-mail. As antigas propriedades `spring.security.user.*` foram removidas; `SC_USERNAME` e `SC_PASSWORD` não são utilizadas.
 
 Exemplo de corpo JSON para criação de pessoa:
 
@@ -161,20 +177,50 @@ O campo `telefoneModel` reproduz o nome presente no DTO atual. Há também requi
 
 ## Autenticação e permissões
 
-A configuração usa sessões `STATELESS`, BCrypt e consulta de usuários no banco. As rotas `/api/v1/auth/**` são públicas; as demais exigem autenticação.
+1. Envie e-mail e senha para `POST /api/v1/auth/login`.
+2. Copie o campo `accessToken` da resposta.
+3. Envie `Authorization: Bearer <accessToken>` em cada chamada protegida.
 
-O login retorna informações do usuário e suas autorizações, mas **ainda não emite token nem estabelece uma sessão para as próximas chamadas**. Não há filtro JWT configurado, e HTTP Basic e formulário de login estão desativados. Assim, o fluxo de acesso autenticado às rotas protegidas ainda precisa ser concluído.
+A resposta mantém `nome`, `email`, `autorizacoes` e `mensagem`, e acrescenta:
 
-As regras de URL e as anotações `@PreAuthorize` são cumulativas:
-
-| Operação de pessoa | Exigências atuais |
+| Campo | Conteúdo |
 | --- | --- |
-| Consultar / listar | Usuário autenticado e autoridade `VISUALIZAR`. |
-| Criar | Autoridade `CRIAR`, também exigida no método. |
-| Atualizar por POST | Autoridade `EDITAR` no método e `CRIAR` ou `ROLE_ADMIN` na regra de URL para POST. |
+| `accessToken` | JWT assinado com HS256. |
+| `tokenType` | `Bearer`. |
+| `expiresIn` | Validade em segundos; padrão 900. |
+| `expiresAt` | Data/hora de expiração em UTC. |
+
+Exemplo de chamada:
+
+```http
+GET /api/v1/pessoa/getTodasPessoas HTTP/1.1
+Host: localhost:9011
+Authorization: Bearer <accessToken>
+```
+
+Os tokens contêm identificação do usuário por e-mail, emissor, identificador único, emissão e expiração. Senhas e hashes não são incluídos. O servidor verifica assinatura, algoritmo, emissor e validade, e consulta o usuário no banco a cada chamada para aplicar desativação e alterações de permissão imediatamente.
+
+A API não cria sessão HTTP e não aceita HTTP Basic. Apenas o POST de login é público; as demais rotas, incluindo a documentação Springdoc, exigem autenticação.
+
+| Situação | Resposta |
+| --- | --- |
+| Login com campos inválidos | `400 Bad Request`. |
+| Credenciais incorretas, usuário inexistente ou inativo | `401 Unauthorized`, com mensagem genérica. |
+| Token ausente, inválido ou expirado | `401 Unauthorized`. |
+| Usuário autenticado sem a permissão necessária | `403 Forbidden`. |
+
+As permissões de pessoas são aplicadas nos métodos do controller:
+
+| Operação | Exigência |
+| --- | --- |
+| Consultar / listar | `VISUALIZAR`. |
+| Criar | `CRIAR`. |
+| Atualizar por POST | `EDITAR`. |
 | Excluir | Papel `ADMIN` (`ROLE_ADMIN`) e autoridade `EXCLUIR`. |
 
-A dependência Springdoc está incluída, mas as rotas da documentação também estão sujeitas à regra geral de autenticação.
+O token de acesso expira após 15 minutos por padrão. Ao expirar, faça login novamente: não há refresh token nem endpoint de logout/revogação individual. Para sair no cliente, descarte o token; uma cópia dele continua válida até expirar, salvo se o usuário for desativado/removido ou a chave for trocada. Uma troca de senha, isoladamente, não revoga tokens já emitidos.
+
+Use HTTPS fora do ambiente local e trate o token como credencial. Os logs de senha e hash do antigo controller foram removidos.
 
 ## Banco de dados e migrações
 
@@ -192,20 +238,20 @@ Com o ambiente e o banco preparados:
 mvn test
 ```
 
-A suíte contém testes unitários de `PessoaController` e `PessoaMapper`, além de um teste de carregamento do contexto Spring que depende da configuração da aplicação e do banco.
+A suíte contém testes de `PessoaController`, `PessoaMapper`, assinatura/validação JWT e integração HTTP com a cadeia real do Spring Security. Os testes JWT usam usuários simulados e não dependem de PostgreSQL. O teste `AtlanticApiApplicationTests` carrega o contexto completo e depende do banco e das variáveis de ambiente.
 
-Para selecionar apenas os dois testes unitários, a partir da raiz:
+Para executar os testes de pessoas e autenticação sem depender do banco, a partir da raiz:
 
 ```sh
-mvn -pl atlantic-web -am "-Dtest=PessoaControllerTest,PessoaMapperTest" -Dsurefire.failIfNoSpecifiedTests=false test
+mvn -pl atlantic-web -am "-Dtest=PessoaControllerTest,PessoaMapperTest,JwtServiceTest,JwtSecurityIntegrationTest" -Dsurefire.failIfNoSpecifiedTests=false test
 ```
 
-Os testes do controller chamam os métodos diretamente e não validam toda a cadeia HTTP de segurança.
+`JwtSecurityIntegrationTest` valida login com BCrypt, acesso por Bearer, respostas 400/401/403, expiração, assinatura incorreta, alterações de permissões e desativação de usuários.
 
-## Pendências para evolução
-
-- Padronizar a versão Java entre o POM raiz e os módulos.
-- Completar a autenticação das requisições protegidas e alinhar as regras de atualização de pessoas.
-- Revisar nomes, versões e ordem das migrações Flyway.
-- Remover do login os logs de depuração que imprimem senha e hash.
-- Externalizar credenciais antes de utilizar o projeto fora do ambiente local.
+## Processos de Funcionamento da API
+#### Ultilizaçao dos endpoints
+Todo endpoint excluindo o ``POST {{baseUrl}}/api/v1/auth/login`` precisam de login, ou seja, antes de acessar qualquer endpoint,
+o endpoint ``POST {{baseUrl}}/api/v1/auth/login`` deve ser acessado com um usuario valido e o tolken salvo na memoria.
+Todos os demais endpoints precisam do tolken para liberar.
+Toda implementaçao frontend da aplicaçao deve estabelecer um tempo de 15 minutos de espera para rodar o endpoint de login novamente,
+visto que o tempo de validade do tolken e de 15 minutos.

@@ -1,32 +1,54 @@
 @baseUrl = http://localhost:9011
-@email = admin@example.com
-@senha = altere-para-uma-senha-valida
+@email = teste.login.20260924@example.com
+@senha = AtlanticTeste!2026local
 @pessoaId = 1
-### Login
+@token = eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBdGxhbnRpY0FQSSIsInN1YiI6InRlc3RlLmxvZ2luLjIwMjYwOTI0QGV4YW1wbGUuY29tIiwianRpIjoiNjg4MGRlOTgtNDQwOC00ZTRkLThjYjgtZWU5OWU0Y2RjNzQxIiwiaWF0IjoxNzkwMjM3MDkzLCJleHAiOjE3OTAyMzc5OTN9.2e9nEeIDwMXIed9pHJkVgml_-tfi6hsHf5lH_zjypBE
+
+### Login: esperado 200 com accessToken, tokenType, expiresIn e expiresAt
 POST {{baseUrl}}/api/v1/auth/login
 Content-Type: application/json
 
 {"email":"{{email}}","senha":"{{senha}}"}
+
 ### Login inválido: esperado 400
 POST {{baseUrl}}/api/v1/auth/login
 Content-Type: application/json
 
 {"email":"invalido","senha":""}
-### Criar (estado atual: 401/403, pois login não devolve token)
+
+### Sem token: esperado 401
+GET {{baseUrl}}/api/v1/pessoa/getTodasPessoas
+
+### Token inválido: esperado 401
+GET {{baseUrl}}/api/v1/pessoa/getTodasPessoas
+Authorization: Bearer token-invalido
+
+### Criar: exige CRIAR
 POST {{baseUrl}}/api/v1/pessoa/criarPessoa
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {"nome":"Teste","dataNascimento":"1990-01-01","cpf":"12345678901","email":"teste@example.com","telefoneModel":"11999999999","inativo":false}
-### Listar
+
+### Listar: exige VISUALIZAR
 GET {{baseUrl}}/api/v1/pessoa/getTodasPessoas
-### Consultar
+Authorization: Bearer {{token}}
+
+### Consultar: exige VISUALIZAR
 GET {{baseUrl}}/api/v1/pessoa/{{pessoaId}}
-### Consultar inexistente
+Authorization: Bearer {{token}}
+
+### Consultar inexistente: esperado 404 com VISUALIZAR
 GET {{baseUrl}}/api/v1/pessoa/999999
-### Atualizar (a API usa POST, embora PUT seja recomendado)
+Authorization: Bearer {{token}}
+
+### Atualizar por POST: exige EDITAR
 POST {{baseUrl}}/api/v1/pessoa/{{pessoaId}}
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {"nome":"Teste Atualizado","email":"atualizado@example.com","inativo":false}
-### Excluir
+
+### Excluir: exige ROLE_ADMIN e EXCLUIR
 DELETE {{baseUrl}}/api/v1/pessoa/{{pessoaId}}
+Authorization: Bearer {{token}}

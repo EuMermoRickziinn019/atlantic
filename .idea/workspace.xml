@@ -4,60 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d4baed-d8f3-4f69-869e-2c46cb62cdf8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/atlantic-comuns/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atlantic-db/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/ISBServicesCmc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/user/Perfil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/user/Permissao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/user/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atlantic-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atlantic-web/src/test/java/com/atlantic/atlanticapi/controller/PessoaControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atlantic-web/src/test/java/com/atlantic/atlanticapi/core/mapper/PessoaMapperTest.java" afterDir="false" />
+    <list default="true" id="a8d4baed-d8f3-4f69-869e-2c46cb62cdf8" name="Changes" comment="melhora na organizacao do projeto">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-tests.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-tests.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-comuns/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-comuns/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-comuns/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/dto/adm/Login/LoginResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/dto/adm/Login/LoginResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-db/target/classes/com/atlantic/models/dto/adm/Login/LoginResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/target/classes/com/atlantic/models/dto/adm/Login/LoginResponseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/controller/PessoaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/controller/PessoaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/target/classes/com/atlantic/atlanticapi/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/target/classes/com/atlantic/atlanticapi/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/target/classes/com/atlantic/atlanticapi/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/target/classes/com/atlantic/atlanticapi/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/target/classes/com/atlantic/atlanticapi/controller/PessoaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/target/classes/com/atlantic/atlanticapi/controller/PessoaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/target/surefire-reports/TEST-com.atlantic.atlanticapi.controller.PessoaControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/target/surefire-reports/TEST-com.atlantic.atlanticapi.controller.PessoaControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/target/surefire-reports/TEST-com.atlantic.atlanticapi.core.mapper.PessoaMapperTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/target/surefire-reports/TEST-com.atlantic.atlanticapi.core.mapper.PessoaMapperTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/target/surefire-reports/com.atlantic.atlanticapi.controller.PessoaControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/target/surefire-reports/com.atlantic.atlanticapi.controller.PessoaControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atlantic-web/target/surefire-reports/com.atlantic.atlanticapi.core.mapper.PessoaMapperTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/target/surefire-reports/com.atlantic.atlanticapi.core.mapper.PessoaMapperTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/AtlanticApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/AtlanticApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/controller/PessoaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/controller/PessoaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/ISBServices/Facade/RN/EmpresaRN.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/Facade/RN/EmpresaRN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/ISBServices/Facade/RN/PessoaRN.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/Facade/RN/PessoaRN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/ISBServices/Facade/RN/ProdutoRN.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/Facade/RN/ProdutoRN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/ISBServices/Facade/RN/UsuarioRN.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/Facade/RN/UsuarioRN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/ISBServices/Facade/SessionFacadeADM.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/Facade/SessionFacadeADM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/ISBServices/ISBServicesAdm.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/ISBServicesAdm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/ISBServices/ISBServicesUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/ISBServices/ISBServicesUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/core/mapper/PessoaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/java/com/atlantic/atlanticapi/core/mapper/PessoaMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/adm/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/adm/Empresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/adm/Perfil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/adm/Permissao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/adm/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/adm/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/adm/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/adm/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/adm/Usuario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/Login/LoginRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/dto/adm/Login/LoginRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/Login/LoginResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/dto/adm/Login/LoginResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/Pessoa/PessoaRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/dto/adm/Pessoa/PessoaRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atlantic/atlanticapi/models/dto/Pessoa/PessoaResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-db/src/main/java/com/atlantic/models/dto/adm/Pessoa/PessoaResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_teste.sql" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V1__create_teste.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1_create_empresa.sql" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V1_create_empresa.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1_create_pessoa.sql" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V1_create_pessoa.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1_create_produto.sql" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V1_create_produto.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1_insert_permicoes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V1_insert_permicoes.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2_create_usuario.sql" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/main/resources/db/migration/V2_create_usuario.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2_teste3.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2_teste4.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/atlantic/atlanticapi/AtlanticApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/atlantic-web/src/test/java/com/atlantic/atlanticapi/AtlanticApiApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="9cbe3d7d-e976-42ad-8556-a0a0ac77a9a7" value="" />
+    </colors>
   </component>
   <component name="EmbeddingIndexingInfo">
     <option name="cachedIndexableFilesCount" value="65" />
@@ -65,74 +50,89 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Exception" />
         <option value="Interface" />
+        <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EuMermoRickziinn019&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Richardmedeiros11/atlantic.git&quot;,
+    &quot;accountId&quot;: &quot;2492dd8f-ccec-4fcb-82ec-93f52f62a715&quot;
+  }
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.4565228008689193" />
-      <entry key="MS500" value="3.7429485371229436" />
-      <entry key="S2" value="5.807833774246042" />
-      <entry key="S5" value="6.478812154185064" />
-      <entry key="S10" value="6.744322771558734" />
-      <entry key="S30" value="7.597308089758373" />
-      <entry key="S60" value="8.82971316337127" />
-      <entry key="M2" value="10.334830129900055" />
-      <entry key="M5" value="14.871373373078715" />
-      <entry key="M10" value="23.545913847151184" />
-      <entry key="M15" value="30.045765209798933" />
-      <entry key="M30" value="40.37325313890563" />
-      <entry key="H1" value="47.69033773478504" />
-      <entry key="H2" value="52.06373710870072" />
-      <entry key="H4" value="54.45699440021115" />
-      <entry key="D1" value="56.56535900408729" />
-      <entry key="W1" value="56.937638288778594" />
+      <entry key="MS100" value="2.129848668594118E-73" />
+      <entry key="MS500" value="2.921940305263182E-15" />
+      <entry key="S2" value="2.492060061742085E-4" />
+      <entry key="S5" value="0.06439271081743428" />
+      <entry key="S10" value="0.6489287836586267" />
+      <entry key="S30" value="4.636435807333125" />
+      <entry key="S60" value="9.559868320270999" />
+      <entry key="M2" value="17.645953742651972" />
+      <entry key="M5" value="39.179616788475556" />
+      <entry key="M10" value="67.94889013479339" />
+      <entry key="M15" value="90.68068751707077" />
+      <entry key="M30" value="140.65495483114418" />
+      <entry key="H1" value="227.9392975215592" />
+      <entry key="H2" value="388.976424519951" />
+      <entry key="H4" value="579.1017292592314" />
+      <entry key="D1" value="865.7654830544664" />
+      <entry key="W1" value="933.1235864130466" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="2.0236197725730213E-267" />
-      <entry key="S2" value="2.698798076354788E-67" />
-      <entry key="S5" value="3.415093553489963E-27" />
-      <entry key="S10" value="8.19693071797758E-14" />
-      <entry key="S30" value="6.888686219314338E-5" />
-      <entry key="S60" value="0.012191062037854519" />
-      <entry key="M2" value="0.2055454339645366" />
-      <entry key="M5" value="1.8839082269164682" />
-      <entry key="M10" value="4.8133350179999335" />
-      <entry key="M15" value="6.769849738703003" />
-      <entry key="M30" value="9.663323872266908" />
-      <entry key="H1" value="11.6096983774089" />
-      <entry key="H2" value="12.74304435077365" />
-      <entry key="H4" value="13.355198401143111" />
-      <entry key="D1" value="13.890187560702637" />
-      <entry key="W1" value="13.984254016450816" />
+      <entry key="MS100" value="1.0000000000000209" />
+      <entry key="MS500" value="1.0018350053695586" />
+      <entry key="S2" value="1.2069709222980576" />
+      <entry key="S5" value="1.5326641288718932" />
+      <entry key="S10" value="1.745868083528922" />
+      <entry key="S30" value="2.528775611543079" />
+      <entry key="S60" value="4.83564620299749" />
+      <entry key="M2" value="11.485710548656101" />
+      <entry key="M5" value="29.363790569857024" />
+      <entry key="M10" value="49.26874984700787" />
+      <entry key="M15" value="63.39691193207776" />
+      <entry key="M30" value="92.91387017356693" />
+      <entry key="H1" value="130.62063553578173" />
+      <entry key="H2" value="173.0739479577717" />
+      <entry key="H4" value="210.0609228567149" />
+      <entry key="D1" value="256.3192598123001" />
+      <entry key="W1" value="266.27175235190526" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.4032746642730913" />
-      <entry key="MS500" value="3.7121573025801187" />
-      <entry key="S2" value="5.795581256639697" />
-      <entry key="S5" value="6.4733152552566535" />
-      <entry key="S10" value="6.74145473421373" />
-      <entry key="S30" value="7.596266018991544" />
-      <entry key="S60" value="8.841071119293067" />
-      <entry key="M2" value="10.53832690792849" />
-      <entry key="M5" value="16.74646671955512" />
-      <entry key="M10" value="28.346752152155396" />
-      <entry key="M15" value="36.80348590311667" />
-      <entry key="M30" value="50.027622070804505" />
-      <entry key="H1" value="59.29456651742744" />
-      <entry key="H2" value="64.80375486591991" />
-      <entry key="H4" value="67.81060030025" />
-      <entry key="D1" value="70.45526957537973" />
-      <entry key="W1" value="70.92185244415269" />
+      <entry key="MS100" value="0.001912930268724467" />
+      <entry key="MS500" value="0.28604944116100567" />
+      <entry key="S2" value="0.8218572646640608" />
+      <entry key="S5" value="1.3261711290554303" />
+      <entry key="S10" value="2.2113587196250326" />
+      <entry key="S30" value="7.043731043309293" />
+      <entry key="S60" value="14.269319564100797" />
+      <entry key="M2" value="28.978701496052842" />
+      <entry key="M5" value="68.36979321485005" />
+      <entry key="M10" value="117.06260898579183" />
+      <entry key="M15" value="153.94210587213968" />
+      <entry key="M30" value="233.4680401791613" />
+      <entry key="H1" value="358.4871694570461" />
+      <entry key="H2" value="562.0002196260824" />
+      <entry key="H4" value="789.131276987635" />
+      <entry key="D1" value="1122.078167865437" />
+      <entry key="W1" value="1199.3943577048487" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -146,17 +146,37 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.main.executor": "Debug",
+    "Docker.docker-compose.yaml: Compose Deployment.executor": "Run",
+    "HTTP Request.api-tests | Atualizar por POST: exige EDITAR.executor": "Run",
+    "HTTP Request.api-tests | Consultar: exige VISUALIZAR.executor": "Run",
+    "HTTP Request.api-tests | Criar: exige CRIAR.executor": "Run",
+    "HTTP Request.api-tests | Excluir: exige ROLE_ADMIN e EXCLUIR.executor": "Run",
+    "HTTP Request.api-tests | Listar: exige VISUALIZAR.executor": "Run",
+    "HTTP Request.api-tests | Login: esperado 200 com accessToken, tokenType, expiresIn e expiresAt.executor": "Run",
+    "JUnit.AtlanticHttpClientTest.executor": "Run",
+    "JUnit.AtlanticHttpClientTest.testPutMethodWithBodyClassAndHeaders.executor": "Run",
+    "JUnit.JwtSecurityIntegrationTest.executor": "Run",
+    "JUnit.JwtServiceTest.executor": "Run",
+    "JUnit.PessoaControllerTest.executor": "Run",
+    "JUnit.PessoaMapperTest.executor": "Run",
+    "KEY_CHAT_IN_TOOLWINDOW": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.AtlanticApiApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/richa/OneDrive/Documentos/atlantic/atlantic-db/src/main/java/com/atlantic",
+    "last_opened_file_path": "C:/Users/richa/OneDrive/Documentos/atlantic/libs/repository/com/submarino",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
@@ -164,18 +184,74 @@
     "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/richa/OneDrive/Documentos/atlantic/atlantic-rnf/src/main/java/com/atlantic/Main.java",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "onboarding.tips.debug.path": "C:/Users/richa/OneDrive/Documentos/atlantic/atlantic-rep/src/main/java/com/atlantic/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\richa\OneDrive\Documentos\atlantic\libs\repository\com\submarino" />
       <recent name="C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-db\src\main\java\com\atlantic" />
       <recent name="C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-web" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="api-tests | Atualizar por POST: exige EDITAR" value="STOPPED" />
+              <entry key="api-tests | Excluir: exige ROLE_ADMIN e EXCLUIR" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AtlanticApiApplication">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atlantic.httpClient.main" />
+      <module name="atlantic-rep" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atlantic.httpClient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="api-tests | Atualizar por POST: exige EDITAR" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-tests.http" executionIdentifier="Atualizar por POST: exige EDITAR" index="9" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="api-tests | Excluir: exige ROLE_ADMIN e EXCLUIR" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-tests.http" executionIdentifier="Excluir: exige ROLE_ADMIN e EXCLUIR" index="10" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="AtlanticHttpClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="atlantic-rep" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AtlanticHttpClientTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AtlanticHttpClientTest.testPutMethodWithBodyClassAndHeaders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="atlantic-rep" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AtlanticHttpClientTest" />
+      <option name="METHOD_NAME" value="testPutMethodWithBodyClassAndHeaders" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="atlantic" />
       <method v="2">
@@ -188,12 +264,41 @@
       <method v="2" />
     </configuration>
     <configuration name="AtlanticApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="DB_PASSWORD" value="0000" />
+        <env name="DB_USERNAME" value="postgres" />
+        <env name="SC_USERNAME" value="admin" />
+        <env name="SC_PASSWORD" value="admin123" />
+      </envs>
       <module name="atlantic-web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atlantic.atlanticapi.AtlanticApiApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.main" />
+      <item itemvalue="HTTP Request.api-tests | Atualizar por POST: exige EDITAR" />
+      <item itemvalue="HTTP Request.api-tests | Excluir: exige ROLE_ADMIN e EXCLUIR" />
+      <item itemvalue="JUnit.AtlanticHttpClientTest" />
+      <item itemvalue="JUnit.AtlanticHttpClientTest.testPutMethodWithBodyClassAndHeaders" />
+      <item itemvalue="Spring Boot.AtlanticApiApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AtlanticHttpClientTest" />
+        <item itemvalue="JUnit.AtlanticHttpClientTest.testPutMethodWithBodyClassAndHeaders" />
+        <item itemvalue="Application.main" />
+        <item itemvalue="HTTP Request.api-tests | Excluir: exige ROLE_ADMIN e EXCLUIR" />
+        <item itemvalue="HTTP Request.api-tests | Atualizar por POST: exige EDITAR" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -215,6 +320,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="melhora na organizacao do projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="melhora na organizacao do projeto" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

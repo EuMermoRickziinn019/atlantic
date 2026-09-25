@@ -19,6 +19,26 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.submarino</groupId>
+            <artifactId>submarino-files</artifactId>
+            <version>${submarino.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.submarino</groupId>
+            <artifactId>submarino-fiscal</artifactId>
+            <version>${submarino.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.submarino</groupId>
+            <artifactId>submarino-comuns</artifactId>
+            <version>${submarino.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.submarino</groupId>
+            <artifactId>submarino-http-client</artifactId>
+            <version>${submarino.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.atlantic</groupId>
             <artifactId>atlantic-db</artifactId>
             <version>${project.version}</version>

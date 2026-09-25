@@ -1,3 +1,5 @@
 C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-web\src\test\java\com\atlantic\atlanticapi\AtlanticApiApplicationTests.java
 C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-web\src\test\java\com\atlantic\atlanticapi\controller\PessoaControllerTest.java
 C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-web\src\test\java\com\atlantic\atlanticapi\core\mapper\PessoaMapperTest.java
+C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-web\src\test\java\com\atlantic\atlanticapi\security\JwtSecurityIntegrationTest.java
+C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-web\src\test\java\com\atlantic\atlanticapi\security\JwtServiceTest.java

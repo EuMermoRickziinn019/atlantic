@@ -3,3 +3,6 @@ C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-web\src\main\java\com\atlan
 C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-web\src\main\java\com\atlantic\atlanticapi\controller\AuthController.java
 C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-web\src\main\java\com\atlantic\atlanticapi\controller\PessoaController.java
 C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-web\src\main\java\com\atlantic\atlanticapi\core\mapper\PessoaMapper.java
+C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-web\src\main\java\com\atlantic\atlanticapi\security\ApiSecurityErrors.java
+C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-web\src\main\java\com\atlantic\atlanticapi\security\JwtAuthenticationFilter.java
+C:\Users\richa\OneDrive\Documentos\atlantic\atlantic-web\src\main\java\com\atlantic\atlanticapi\security\JwtService.java

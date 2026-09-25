@@ -24,7 +24,6 @@
     <modules>
         <module>atlantic-db</module>
         <module>atlantic-web</module>
-        <module>atlantic-comuns</module>
     </modules>
     <scm>
         <connection/>
@@ -34,5 +33,12 @@
     </scm>
     <properties>
         <java.version>21</java.version>
+        <submarino.version>1.0.0</submarino.version>
     </properties>
+    <repositories>
+        <repository>
+            <id>submarino-bundled</id>
+            <url>file:///${maven.multiModuleProjectDirectory}/libs/repository</url>
+        </repository>
+    </repositories>
 </project>
